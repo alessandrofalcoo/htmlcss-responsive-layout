@@ -113,11 +113,12 @@ iframe{
 footer{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     background-color: #7c69a4;
     color: white;
-    padding: 2rem 0;
+    padding: 2rem;
     ul{
         gap: 1rem;
     }
@@ -223,10 +224,7 @@ footer{
 
     footer{
         flex-direction: row;
-    }
-    .footer-list{
-        display: flex;
-        justify-content: ;
+        
     }
 
 }    

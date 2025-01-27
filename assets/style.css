@@ -1,3 +1,4 @@
+/* Common */
 *
 {
     margin: 0;
@@ -21,6 +22,12 @@ img{
 ul, li{
     list-style: none;
 }
+
+#tiramisu{
+    width: 300px;
+}
+
+/* End Common */
 
 /* Header */
 
@@ -61,25 +68,28 @@ header{
     }
 }
 
-.tutorial {
+iframe{
+    width: 100%;
+}
+
+.vid-tutorial {
+    padding-top: 1rem 1.5rem;
+}
+
+.passages{
     background-color: white;
-    padding: 1rem 1.5rem;
-    img {
-    margin: 1rem 0;
-    }
 }
 
 .social{
     padding: 1rem 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 1rem;
     button{
         border-radius: 50px;
         border-color: white;
         padding: 0.5rem;
-        
         span{
             font-family: Montserrat, 'Helvetica Neue', sans-serif;
         }
@@ -130,10 +140,16 @@ footer{
 
 /* Media Query */
 
-@media  screen and (max-width: 480px){
+@media  screen and (max-width: 767px){
     h1{
         text-align: center;
         margin: 1rem 0;
+    }
+
+    .title{
+        span{
+            display: none;
+        }
     }
 
     .social span{
@@ -142,9 +158,76 @@ footer{
     #banner{
         display: none;
     }
+    #tiramisu{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
+@media screen and (max-width: 991px){
+    h1{
+        padding-left: 2rem;
+    }
 
-
+    .passages{
+        padding-left: 1rem;
+        ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+} 
     
+
+    .social{
+        button{
+            width: 100%;
+        }
+        span{
+            display: none;
+        }
+    }
+    #tiramisu{
+        float: left;
+        padding-right: 1rem;
+    } 
+}
+
+@media  screen and (min-width: 992px) {
+    h1{
+        font-size: 40px;
+    }
+    .tutorial{
+        display: flex;
+        iframe{
+            width: 500px;
+        }
+        .passages{
+            width: 100%;
+            flex-direction: column;
+            padding-left: 4rem;
+        }
+    }
+    .social{
+        span{
+            display: inline;
+            padding-left: 0.5rem;
+        }
+    }
+    #tiramisu{
+        float: left;
+        padding-right: 1rem;
+        width: 50%;
+    } 
+
+    footer{
+        flex-direction: row;
+    }
+    .footer-list{
+        display: flex;
+        justify-content: ;
+    }
+
+}    
 

@@ -47,6 +47,8 @@ header{
 }
 
 .title{
+    color: #4e3969;
+    font-weight: bold;
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
@@ -141,7 +143,7 @@ footer{
 
 /* Media Query */
 
-@media  screen and (max-width: 767px){
+@media  screen and (max-width: 480px){
     h1{
         text-align: center;
         margin: 1rem 0;
@@ -166,9 +168,13 @@ footer{
     }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 768px){
     h1{
         padding-left: 2rem;
+    }
+
+    span{
+        display: inline;
     }
 
     .passages{
@@ -199,6 +205,11 @@ footer{
     h1{
         font-size: 40px;
     }
+
+    span{
+        display: inline;
+    }
+
     .tutorial{
         display: flex;
         iframe{

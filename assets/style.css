@@ -9,19 +9,19 @@ img{
     width: 100%;
 }
 
-@media  screen and (max-width: 480px){
-    h1{
-        text-align: center;
-    }
-
+a{
+    color: black;
 }
-
 header{
     font-family: 'Nerko One', cursive;
+    width: 100%;
+    color: #f8971e;
 }
+
 
 .container{
     margin: 1rem;
+    background-color: #f6f5f3;
 }
 
 .tutorial {
@@ -34,5 +34,34 @@ header{
 ul, li{
     list-style: none;
 }
+
+footer{
+    background-color: #7c69a4;
+}
+
+
+@media  screen and (max-width: 480px){
+    h1{
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .social span{
+        display: none;
+    }
+    .footer-list{
+        display: flex;
+        justify-content: space-around;
+        a{
+            flex-wrap: wrap;
+        }
+    }
+    #banner{
+        display: none;
+    }
+}
+
+
+
     
 

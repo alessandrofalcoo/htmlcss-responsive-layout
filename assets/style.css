@@ -18,8 +18,8 @@ img{
     width: 100%;
 }
 
-iframe{
-    background-image: url(../assets/img/image\ \(10\).png)
+ul, li{
+    list-style: none;
 }
 
 /* Header */
@@ -35,7 +35,12 @@ header{
 /* Main */
 
 .sweets{
-    color: #f6f5f3;
+    color: #b1a6ad;
+    padding-left: 1rem;
+}
+
+.title{
+    padding-left: 1rem;
 }
 
 
@@ -43,17 +48,45 @@ header{
     padding: 1rem;
     background-color: #f6f5f3;
     width: 100%;
+    ul{
+        padding: 1rem 0;
+        li{
+            padding: 0.5rem 0;
+        }
+    }
+
+    span{
+        font-weight: bold;
+    }
 }
 
 .tutorial {
+    background-color: white;
+    padding: 1rem 1.5rem;
     img {
     margin: 1rem 0;
     }
 }
 
+.social{
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    button{
+        border-radius: 50px;
+        border-color: white;
+        padding: 0.5rem;
+        
+        span{
+            font-family: Montserrat, 'Helvetica Neue', sans-serif;
+        }
+    }
+}
 
-ul, li{
-    list-style: none;
+.presentation{
+    padding: 1rem;
 }
 
 /* End Main */
@@ -62,6 +95,9 @@ ul, li{
 
 footer{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #7c69a4;
     color: white;
     padding: 2rem 0;
@@ -70,7 +106,12 @@ footer{
     }
     a{
         color: white;
+    }
+    .footer-list{
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        padding-top: 1rem;
     }
 }
 
@@ -87,10 +128,6 @@ footer{
 
     .social span{
         display: none;
-    }
-    .footer-list{
-        display: flex;
-        justify-content: center;
     }
     #banner{
         display: none;

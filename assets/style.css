@@ -5,23 +5,44 @@
     box-sizing: border-box;
 }
 
+main{
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
 img{
     width: 100%;
 }
 
-a{
-    color: black;
+iframe{
+    background-image: url(../assets/img/image\ \(10\).png)
 }
+
+/* Header */
+
 header{
     font-family: 'Nerko One', cursive;
     width: 100%;
     color: #f8971e;
 }
 
+/* End Header */
+
+/* Main */
+
+.sweets{
+    color: #f6f5f3;
+}
+
 
 .container{
-    margin: 1rem;
+    padding: 1rem;
     background-color: #f6f5f3;
+    width: 100%;
 }
 
 .tutorial {
@@ -35,10 +56,28 @@ ul, li{
     list-style: none;
 }
 
+/* End Main */
+
+/* Footer */
+
 footer{
+    width: 100%;
     background-color: #7c69a4;
+    color: white;
+    padding: 2rem 0;
+    ul{
+        gap: 1rem;
+    }
+    a{
+        color: white;
+        flex-wrap: wrap;
+    }
 }
 
+/* End Footer */
+
+
+/* Media Query */
 
 @media  screen and (max-width: 480px){
     h1{
@@ -51,10 +90,7 @@ footer{
     }
     .footer-list{
         display: flex;
-        justify-content: space-around;
-        a{
-            flex-wrap: wrap;
-        }
+        justify-content: center;
     }
     #banner{
         display: none;

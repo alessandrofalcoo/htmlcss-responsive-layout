@@ -4,16 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header{
-    font-family: 'Nerko One', cursive;
-}
-
 @media  screen and (max-width: 480px){
     h1{
         text-align: center;
     }
 
+}
+
+header{
+    font-family: 'Nerko One', cursive;
+}
+
+.container{
+    margin: 1rem;
+}
+
+.tutorial {
+    img {
+    margin: 1rem 0;
+    }
+}
+
+
+ul, li{
+    list-style: none;
 }
     
 
